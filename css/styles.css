@@ -373,8 +373,8 @@ footer p {
     display: none;
   }
   #cs-navigation .cs-logo {
-    width: 18.4%;
-    max-width: 21.875rem;
+    width: auto;
+    max-width: none;
     height: 4.0625rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
@@ -382,13 +382,25 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
     z-index: 100;
   }
   #cs-navigation .cs-logo img {
-    width: 100%;
-    height: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
+  }
+  #cs-navigation .cs-logo-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  #cs-navigation .cs-logo-text .henry {
+    color: #1a1a1a;
+  }
+  #cs-navigation .cs-logo-text .ypin {
+    color: #0066cc;
   }
   #cs-navigation .cs-ul {
     width: 100%;
