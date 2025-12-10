@@ -27,6 +27,60 @@ main {
   flex: 1;
   margin-top: 80px; /* Space for fixed header */
   padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  max-width: 900px;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--headerColor);
+}
+
+.hero .subtitle {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--bodyTextColor);
+}
+
+.hero .description {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  color: #666;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  opacity: 0.7;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
 }
 
 footer {
